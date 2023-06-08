@@ -1,5 +1,5 @@
 body {
-font-family arial,sans-serif
+font-family: arial,sans-serif
 }
 
 .weather-app{
@@ -12,10 +12,10 @@ font-family arial,sans-serif
 
 h1 {
     
-color #878787;
-font-size 24px ;
-font-weight 100 ;
-height auto ;
-line-height 28px; 
+color: #878787;
+font-size: 24px ;
+font-weight: 100 ;
+height: auto ;
+line-height: 28px; 
     
 }
