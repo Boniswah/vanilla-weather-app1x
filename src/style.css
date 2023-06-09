@@ -41,6 +41,10 @@ max-width: 600px;
     border-radius: 5px;
 }
 
+.overview {
+    margin-bottom: 20px;
+}
+
 .weather-temperature img {
     margin-right: 10px;
     height: 64px;
