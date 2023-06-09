@@ -14,6 +14,7 @@
   <div class="container">
     <div class="weather-app-wrapper">
     <div class="weather-app">
+      <div class="overview">
    <h1>Pretoria</h1>
    <ul>
     <li>
@@ -25,10 +26,13 @@
    </ul>
    <div class="row">
     <div class="col-6">
-      <img src="https://ssl.gstatic.com/onebox/weather/64/sunny_s_cloudy.png" alt="partly cloudy"/>
-    
-    15 °C | °F
-    </div>
+      <div class="d-flex weather-temperature">
+        <img src="https://ssl.gstatic.com/onebox/weather/64/sunny_s_cloudy.png" alt="Partly cloudy" id="icon" />
+        <div class=>
+          <strong id="temperature">15</strong><span class="units"> °C | °F </span>
+        </div>
+      </div>
+</div>
     <div class="col-6">
       <ul>
         <li>
