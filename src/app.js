@@ -15,7 +15,7 @@ function formatDate(timestamp){
 }
 
 function displayTemperature(response) {
-console.log(response.data);
+
 let temperatureElement = document.querySelector("#temperature");
 let cityElement = document.querySelector("#city");
 let descriptionElement = document.querySelector("#description");
@@ -39,10 +39,23 @@ iconElement.setAttribute("alt", response.data.condition.description)
 
 }
 
-
-
-let city = "Centurion";
+function search(city){
 let apikey = "febb10a9ted73c64aff21fo10d593bdc";
 let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apikey}&units=metric`;
 
 axios.get(apiUrl).then(displayTemperature);
+}
+
+
+
+function handleSubmit(event) {
+  event.preventDefault();
+  let cityInputElement = document.querySelector("#city-input");
+  search(cityInputElement.value);
+}
+
+let form = document.querySelector("#search-form");
+form.addEventListener("submit", handleSubmit);
+
+search("Centurion");
+
